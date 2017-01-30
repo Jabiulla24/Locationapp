@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Location Based App</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+    
+      <button ion-item (click)="loadPage()">
+        Login
+      </button>
+      <button ion-item (click)="loadSignupPage()">
+        Signup
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+  
+  <h2>Welcome to Location Based App</h2>
+  <p>
+    Location Based Application Modules are
+  </p>
+  
+    <ul>
+      <li>Questions and Answers</li>
+      <li>Events</li>
+      <li>Offers</li>
+      <li>Map View</li>
+    </ul>
+     
+  <ion-nav id="nav" #content [root]="rootPage"></ion-nav>
+</ion-content>
